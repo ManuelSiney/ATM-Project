@@ -8,10 +8,11 @@ package atm.project;
  *
  * @author manue
  */
-public class Deposito {
+public class Deposito extends Transaccion {
     int monto;
     
-    void ejecutar (int monto) {
+    public void ejecutar (int monto) {
+        System.out.println("Deposito.ejecutar");
     }
     
 }

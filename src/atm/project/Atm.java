@@ -1,15 +1,21 @@
 package atm.project;
+
+import java.util.Scanner;
+
 /*
  @author manue
  */
 public class Atm {
     
     //Atributos
-    int doWhile = 0;    
+    int doWhile = 0;
+    int switchMenu;    
     
-    //Metodos declarados
+    //OBJETOS declarados
+    Scanner recogeDatos = new Scanner(System.in);
     private Pantalla pantallaObj = new Pantalla();
     private TecladoNumerico tecladoNumericoObj = new TecladoNumerico();
+    private Retiro retiroObj = new Retiro();
     
     /*/Constructor  inicializador de Metodos  
     public Atm () {
@@ -23,8 +29,8 @@ public class Atm {
     public int solicitarDatos() {
         do {
             if (this.doWhile != 1) {
-                pantallaObj.mensajeBienvenida("BIENVENIDO!\n\n");
-                pantallaObj.mensajeBienvenida("Ingrese su numero de cuenta: ");
+                pantallaObj.mensaje("BIENVENIDO!\n\n");
+                pantallaObj.mensaje("Ingrese su numero de cuenta: ");
                 int numCuenta = tecladoNumericoObj.capturaCuenta();
                 this.doWhile = tecladoNumericoObj.doWhile;
             }
@@ -35,7 +41,7 @@ public class Atm {
         
         do {
             if (this.doWhile != 1) {
-                pantallaObj.mensajeBienvenida("\nDigite su NIP asociado a la cuenta: ");
+                pantallaObj.mensaje("\nDigite su NIP asociado a la cuenta: ");
                 int numNip = tecladoNumericoObj.capturaCuenta();
                 this.doWhile = tecladoNumericoObj.doWhile;
                 return this.doWhile;
@@ -44,8 +50,31 @@ public class Atm {
                 this.doWhile = 0;
             }
         } while (this.doWhile != 1);
-        return this.doWhile;
+        return this.doWhile;        
+    }
+    
+    public int menuOpciones() {        
+        pantallaObj.mensaje("\nMENU PRINCIPAL:\n\n");
+        pantallaObj.mensaje("\t1 - Consultar Saldo.\n");
+        pantallaObj.mensaje("\t2 - Retirar Efectivo.\n");
+        pantallaObj.mensaje("\t3 - Depositar Fondos.\n");
+        pantallaObj.mensaje("\t4 - Salir.\n");
+        pantallaObj.mensaje("\nDigite una opcion: ");
+        switchMenu = recogeDatos.nextInt();
         
+        switch (switchMenu) {
+            case 1: {
+                pantallaObj.mensaje("\nCONSULTA DE SALDO:\n");
+                retiroObj.consultaSaldo();                
+            }
+            switchMenu = 2;
+            case 2: {
+                System.out.println("Desea realizar otra operacion?");
+            }
+        }
+        
+        
+        return 0;
     }
 
     

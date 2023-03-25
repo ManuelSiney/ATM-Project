@@ -15,16 +15,16 @@ public class TecladoNumerico {
     int doWhile;
     
     //Metodo declarado para el Scanner
-    Scanner scan;
+    Scanner recogeDatos;
     
     //Constructor para inicializar el Scanner
     public TecladoNumerico() {
-        scan = new Scanner(System.in);
+        recogeDatos = new Scanner(System.in);
     }
     
     //Metodo para guardar dato Cuenta
     public int capturaCuenta() {     
-        int cuenta = scan.nextInt();
+        int cuenta = recogeDatos.nextInt();
         if (cuenta > 9999 && cuenta < 100000) {
             doWhile = 1;
             return doWhile;

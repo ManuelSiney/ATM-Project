@@ -8,10 +8,11 @@ package atm.project;
  *
  * @author manue
  */
-public class Retiro {
+public class Retiro extends Transaccion {
     int monto;
     
-    void ejecutar (int monto) {
+    public void ejecutar (int monto) {
+        System.out.println("Retiro.ejecutar");
     }
     
 }

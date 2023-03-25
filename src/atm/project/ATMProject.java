@@ -6,15 +6,22 @@ public class ATMProject {
 
     public static void main(String[] args) {
         //Atributos
-        int doWhile = 0;
+        int doWhile;
         
-        //Objetos
-        Atm principalObj = new Atm();
+        //OBJETOS
+        Atm principalObj = new Atm();        
         
         do {
-            principalObj.solicitarDatos();
+            principalObj.solicitarDatos();            
             doWhile = principalObj.doWhile;            
-        } while (doWhile != 1);       
+        } while (doWhile != 1);
+        
+        do {            
+            principalObj.menuOpciones();
+            doWhile = principalObj.doWhile;            
+        } while (doWhile != 1);
+        
+        
         
     }
 }

@@ -5,7 +5,7 @@ package atm.project;
 public class Pantalla {
         
     //Metodo de SMSBIENVENIDA
-    public void mensajeBienvenida (String mensaje) {
+    public void mensaje (String mensaje) {
         System.out.print(mensaje);        
     }
     

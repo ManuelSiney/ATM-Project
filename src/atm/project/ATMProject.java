@@ -13,17 +13,8 @@ public class ATMProject {
         
         do {
             principalObj.solicitarDatos();
-            doWhile = principalObj.doWhile;
-            System.out.println(doWhile);
-            
+            doWhile = principalObj.doWhile;            
         } while (doWhile != 1);       
         
-        /*/Atributos
-        int c=0;        
-               
-        do {            
-            Atm obj = new Atm ();
-        } while(c != 0);
-        */
     }
 }

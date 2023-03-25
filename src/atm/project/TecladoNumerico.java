@@ -30,7 +30,7 @@ public class TecladoNumerico {
             return doWhile;
         }
         else {
-            System.out.println("ERROR! El numero debe ser de 5 digitos\nVuelva a intentarlo.");
+            System.out.println("\nERROR! El numero debe ser de 5 digitos\nVuelva a intentarlo.\n");
             doWhile = 0;
             return doWhile;            
         }

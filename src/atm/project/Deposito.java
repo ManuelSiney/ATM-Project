@@ -11,7 +11,7 @@ package atm.project;
 public class Deposito extends Transaccion {
     int monto;
     
-    public void ejecutar (int monto) {
+    public void depositoFondos (int monto) {
         System.out.println("Deposito.ejecutar");
     }
     

@@ -1,0 +1,3 @@
+ dpi | nip | nombre | apellido | cuenta | saldo | direccion |
+ 123 | 456 | Manuel | Siney | 789 | 147 | San Juan Sac |
+ 321 | 654 | Juan | Vicente | 987 | 741 | San Pedro Sac |

@@ -9,8 +9,12 @@ public class ATMProject {
         int doWhile;
         
         //OBJETOS
-        Atm principalObj = new Atm();        
-        
+        Atm principalObj = new Atm();
+        BaseDeDatos baseDeDatosObj = new BaseDeDatos();
+        /*
+        baseDeDatosObj.escribir2();
+        baseDeDatosObj.leer();
+        */
         do {
             principalObj.solicitarDatos();            
             doWhile = principalObj.doWhile;            

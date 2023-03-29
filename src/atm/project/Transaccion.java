@@ -9,7 +9,7 @@ package atm.project;
  * @author manue
  */
 public abstract class Transaccion {
-    private int monto;
+    //private int monto;
     
     public void consultaSaldo() {
         System.out.println("\nSu saldo disponible es de: "+56+"\n");
